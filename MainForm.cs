@@ -28,6 +28,8 @@ namespace CarRentalCustomerGUIDesign
         {
             Form displayCustomers = new DisplayCustomers();
             displayCustomers.Show();
+            
+            
         }
     }
 }

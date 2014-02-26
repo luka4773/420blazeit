@@ -29,70 +29,69 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.CustomerListCloseButton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.customerDataDataSet = new CarRentalCustomerGUIDesign.CustomerDataDataSet();
+            this.database1DataSet = new CarRentalCustomerGUIDesign.Database1DataSet();
             this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tableTableAdapter = new CarRentalCustomerGUIDesign.CustomerDataDataSetTableAdapters.TableTableAdapter();
-            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableTableAdapter = new CarRentalCustomerGUIDesign.Database1DataSetTableAdapters.TableTableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cPRDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ButtonCloseDisplay = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerDataDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // CustomerListCloseButton
-            // 
-            this.CustomerListCloseButton.Location = new System.Drawing.Point(12, 186);
-            this.CustomerListCloseButton.Name = "CustomerListCloseButton";
-            this.CustomerListCloseButton.Size = new System.Drawing.Size(75, 23);
-            this.CustomerListCloseButton.TabIndex = 0;
-            this.CustomerListCloseButton.Text = "Close";
-            this.CustomerListCloseButton.UseVisualStyleBackColor = true;
-            this.CustomerListCloseButton.Click += new System.EventHandler(this.CustomerListCloseButton_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.firstNameDataGridViewTextBoxColumn,
-            this.lastNameDataGridViewTextBoxColumn,
+            this.idDataGridViewTextBoxColumn,
+            this.firstnameDataGridViewTextBoxColumn,
+            this.lastnameDataGridViewTextBoxColumn,
             this.ageDataGridViewTextBoxColumn,
             this.cPRDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tableBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 30);
+            this.dataGridView1.Location = new System.Drawing.Point(2, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(445, 150);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.Size = new System.Drawing.Size(543, 150);
+            this.dataGridView1.TabIndex = 0;
             // 
-            // customerDataDataSet
+            // database1DataSet
             // 
-            this.customerDataDataSet.DataSetName = "CustomerDataDataSet";
-            this.customerDataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.database1DataSet.DataSetName = "Database1DataSet";
+            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tableBindingSource
             // 
             this.tableBindingSource.DataMember = "Table";
-            this.tableBindingSource.DataSource = this.customerDataDataSet;
+            this.tableBindingSource.DataSource = this.database1DataSet;
             // 
             // tableTableAdapter
             // 
             this.tableTableAdapter.ClearBeforeFill = true;
             // 
-            // firstNameDataGridViewTextBoxColumn
+            // idDataGridViewTextBoxColumn
             // 
-            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "First Name";
-            this.firstNameDataGridViewTextBoxColumn.HeaderText = "First Name";
-            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // lastNameDataGridViewTextBoxColumn
+            // firstnameDataGridViewTextBoxColumn
             // 
-            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "Last name";
-            this.lastNameDataGridViewTextBoxColumn.HeaderText = "Last name";
-            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            this.firstnameDataGridViewTextBoxColumn.DataPropertyName = "Firstname";
+            this.firstnameDataGridViewTextBoxColumn.HeaderText = "Firstname";
+            this.firstnameDataGridViewTextBoxColumn.Name = "firstnameDataGridViewTextBoxColumn";
+            // 
+            // lastnameDataGridViewTextBoxColumn
+            // 
+            this.lastnameDataGridViewTextBoxColumn.DataPropertyName = "Lastname";
+            this.lastnameDataGridViewTextBoxColumn.HeaderText = "Lastname";
+            this.lastnameDataGridViewTextBoxColumn.Name = "lastnameDataGridViewTextBoxColumn";
             // 
             // ageDataGridViewTextBoxColumn
             // 
@@ -106,18 +105,28 @@
             this.cPRDataGridViewTextBoxColumn.HeaderText = "CPR";
             this.cPRDataGridViewTextBoxColumn.Name = "cPRDataGridViewTextBoxColumn";
             // 
+            // ButtonCloseDisplay
+            // 
+            this.ButtonCloseDisplay.Location = new System.Drawing.Point(13, 186);
+            this.ButtonCloseDisplay.Name = "ButtonCloseDisplay";
+            this.ButtonCloseDisplay.Size = new System.Drawing.Size(75, 23);
+            this.ButtonCloseDisplay.TabIndex = 1;
+            this.ButtonCloseDisplay.Text = "Close";
+            this.ButtonCloseDisplay.UseVisualStyleBackColor = true;
+            this.ButtonCloseDisplay.Click += new System.EventHandler(this.ButtonCloseDisplay_Click);
+            // 
             // DisplayCustomers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(562, 253);
+            this.ClientSize = new System.Drawing.Size(560, 223);
+            this.Controls.Add(this.ButtonCloseDisplay);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.CustomerListCloseButton);
             this.Name = "DisplayCustomers";
-            this.Text = "Displaying Customers";
+            this.Text = "DisplayCustomers";
             this.Load += new System.EventHandler(this.DisplayCustomers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerDataDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -125,14 +134,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Button CustomerListCloseButton;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private CustomerDataDataSet customerDataDataSet;
+        private Database1DataSet database1DataSet;
         private System.Windows.Forms.BindingSource tableBindingSource;
-        private CustomerDataDataSetTableAdapters.TableTableAdapter tableTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
+        private Database1DataSetTableAdapters.TableTableAdapter tableTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn firstnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lastnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ageDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cPRDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button ButtonCloseDisplay;
     }
 }

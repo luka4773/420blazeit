@@ -76,6 +76,7 @@
             this.CreateCustomerButton.TabIndex = 4;
             this.CreateCustomerButton.Text = "Ok";
             this.CreateCustomerButton.UseVisualStyleBackColor = true;
+            this.CreateCustomerButton.Click += new System.EventHandler(this.CreateCustomerButton_Click);
             // 
             // LabelFirstName
             // 
