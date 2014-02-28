@@ -12,3 +12,16 @@ D:\ConstructionSemester2\CarRentalCustomerGUIDesign\CarRentalCustomerGUIDesign\o
 D:\ConstructionSemester2\CarRentalCustomerGUIDesign\CarRentalCustomerGUIDesign\bin\Debug\Database1.mdf
 D:\ConstructionSemester2\CarRentalCustomerGUIDesign\CarRentalCustomerGUIDesign\bin\Debug\Database1_log.ldf
 D:\ConstructionSemester2\CarRentalCustomerGUIDesign\CarRentalCustomerGUIDesign\obj\Debug\CarRentalCustomerGUIDesign.DisplayCustomers.resources
+D:\GITHUB\420blazeit\bin\Debug\Database1.mdf
+D:\GITHUB\420blazeit\bin\Debug\Database1_log.ldf
+D:\GITHUB\420blazeit\bin\Debug\CarRentalCustomerGUIDesign.exe.config
+D:\GITHUB\420blazeit\bin\Debug\CarRentalCustomerGUIDesign.exe
+D:\GITHUB\420blazeit\bin\Debug\CarRentalCustomerGUIDesign.pdb
+D:\GITHUB\420blazeit\obj\Debug\CarRentalCustomerGUIDesign.csprojResolveAssemblyReference.cache
+D:\GITHUB\420blazeit\obj\Debug\CarRentalCustomerGUIDesign.CreateCustomer.resources
+D:\GITHUB\420blazeit\obj\Debug\CarRentalCustomerGUIDesign.DisplayCustomers.resources
+D:\GITHUB\420blazeit\obj\Debug\CarRentalCustomerGUIDesign.MainForm.resources
+D:\GITHUB\420blazeit\obj\Debug\CarRentalCustomerGUIDesign.Properties.Resources.resources
+D:\GITHUB\420blazeit\obj\Debug\CarRentalCustomerGUIDesign.csproj.GenerateResource.Cache
+D:\GITHUB\420blazeit\obj\Debug\CarRentalCustomerGUIDesign.exe
+D:\GITHUB\420blazeit\obj\Debug\CarRentalCustomerGUIDesign.pdb
