@@ -26,7 +26,7 @@ namespace CarRentalCustomerGUIDesign
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form displayCustomers = new DisplayCustomers();
+            Form displayCustomers = new DisplayCustomers(); 
             displayCustomers.Show();
             
             
